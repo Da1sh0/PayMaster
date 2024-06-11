@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --colorPrimario: #4A90E2;    /* Azul Primario */
+    --colorSecundario: #50E3C2;  /* Verde Secundario */
+    --colorAcento: #F5A623;      /* Naranja de Acento */
+    --colorFondo: #F4F4F4;       /* Gris Claro de Fondo */
+    --colorTexto: #333333;       /* Negro Suave para Texto */
+    --colorEncabezado: #4A4A4A;  /* Gris Oscuro para Encabezados */
+    --colorBorde: #E0E0E0;       /* Gris Claro para Bordes */
+}
+*{
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: var(--colorFondo);
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: var(--colorPrimario);
+    color: var(--colorFondo);
+    padding: 10px 20px;
+    top: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--colorFondo);
+}
+a:hover{
+    color: var(--colorAcento);
+}
+.nav img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 100%;
+}
+
+
+.perfil, .nomina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-top: 70px; 
+    padding: 20px;
+    
+}
+
+.perfil label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--colorBorde);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="date"],
+input[type="file"] {
+    width: 20%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid var(--colorBorde);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.perfil img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.perfil button[type="submit"] {
+    background-color: var(--colorPrimario);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.perfil button[type="submit"]:hover {
+    background-color: var(--colorAcento);
+}
+
+
+input[type="file"] {
+    display: none; /* Oculta el input de tipo file */
+}
+
+.custom-file-input {
+    background-color: var(--colorPrimario);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-file-input:hover {
+    background-color: var(--colorAcento); /* Cambia el color de fondo al pasar el ratón */
+}
+
+.nomina table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nomina th,
+.nomina td {
+    padding: 8px;
+    border: 1px solid var(--colorTexto);
+    text-align: left;
+}
+
+.nomina th {
+    background-color: var(--colorPrimario);
+    color: white;
+}
+
+.nomina tr:nth-child(even) {
+    background-color: var(--colorFondo);
+}
+
+.nomina tr:hover {
+    background-color: #ddd;
+}
+
+.nomina button {
+    background-color: var(--colorPrimario);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nomina button:hover {
+    background-color: var(--colorAcento);
+}
