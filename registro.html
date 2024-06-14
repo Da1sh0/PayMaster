@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/perfil.css">
+    <link rel="shortcut icon" href="./image/logo2.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="./perfil.html"><img src="./image/perfil.png" alt="perfil"></a>
+        <a href="./nomina.html"><img src="./image/pago.png" alt="nomina"></a>
+        <a href="./empresa.html"><img src="./image/empresas.png" alt="empresa"></a>
+        <a href="./dependiente.html"><img src="./image/cerrar.png" alt="cerrar"></a>
+    </div>
+    <p id="titulo"> Registro de nuevos empleados </p>
+    <div class="registro">
+        <div class="info">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="tipoDocumento">Tipo de Documento:</label>
+            <select id="tipoDocumento" name="tipoDocumento" required>
+                <option value="CC">Cédula de Ciudadanía</option>
+                <option value="TI">Tarjeta de Identidad</option>
+                <option value="CE">Cédula de Extranjería</option>
+                <option value="PP">Pasaporte</option>
+            </select>
+
+            <label for="numeroDocumento">Número de Documento:</label>
+            <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+        </div>
+        <div class="info">
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" name="empresa" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="foto" class="custom-file-input">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required>
+
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
+    <div class="nav dos">
+        <a href="./nomina.html"><img src="./image/usuarios.png" alt="usuarios"></a>
+        <a href="./nomina.html"><img src="./image/agregar.png" alt="nomina"></a>
+    </div>
+    
+</body>
+</html>

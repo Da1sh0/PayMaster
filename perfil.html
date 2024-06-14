@@ -9,13 +9,14 @@
 </head>
 <body>
     <div class="nav">
-        <p>Bienvenido Diiego</p>
-        <a href="./perfil.html">Perfil</a>
-        <a href="./nomina.html">Nomina / Usuarios</a>
-        <a href="./empresa.html">Empresas???</a>
-        <img src="./image/mapache.png" alt="Menu">
+        <a href="./perfil.html"><img src="./image/perfil.png" alt="perfil"></a>
+        <a href="./nomina.html"><img src="./image/pago.png" alt="nomina"></a>
+        <a href="./empresa.html"><img src="./image/empresas.png" alt="empresa"></a>
+        <a href="./dependiente.html"><img src="./image/cerrar.png" alt="cerrar"></a>
     </div>
+    <p> Informacion del Empleado </p>
     <div class="perfil">
+        <div class="info">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" value="Diiego">
     
@@ -25,12 +26,13 @@
             <label for="fecha_nacimiento">Fecha de Nacimiento:</label> 
             <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="2004/12/16">
 
-            <label for="tipo_documento">tipo de documetno:</label>
+            <label for="tipo_documento">tipo de Documento:</label>
             <input type="text" id="documento" name="documento" value="CC">
 
             <label for="documento">Documento:</label>
             <input type="number" id="salario" name="salario" value="10233">
-
+        </div>
+        <div class="info">
             <label for="email">Email:</label>
             <input type="email" id="cargo" name="cargo" value="diego@gmail.com">
 
@@ -42,9 +44,10 @@
 
             <label for="foto" class="custom-file-input">Foto de Perfil</label>
             <img src="./image/mapache.png" alt="">
-            <input type="file" id="foto" name="foto" accept="image/*">
+            <input type="file" id="foto" name="foto" accept="image/*"> <br>
 
-            <button type="submit">Gaurdar</button>
+            <button type="submit">Guardar</button>
+        </div>
     </div>
  
 </body>

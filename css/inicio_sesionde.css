@@ -143,3 +143,23 @@ input[type=checkbox]{
 .enlaces:hover{
     color: var(--colorAcento);
 }
+.volverB{
+    display: flex;
+    align-items: end;
+    height: 100%;
+    
+}
+.volver{
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+    color: var(--colorTexto);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+}
+.volver:hover{
+    color: var(--colorAcento);
+    text-decoration:dashed;
+}
